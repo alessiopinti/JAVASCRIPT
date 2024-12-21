@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="/js/dom.js" defer></script>
+    <script src="/js/table-overview.js" defer></script>
+  </head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <li class="links">
+            <a href="index.html">Home</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="table-overview.html">Table Overview</a>
+            <a href="add-game.html">Add game</a>
+            <a href="free-to-play.html">Free-To-Play Database</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <label for="filter">Show games with a rating higher than:</label>
+    <input id="filter" type="number" min="0" step="1" />
+
+    <button id="fetchButton">Fetch games</button>
+    <label for="name">from backend with name containing:</label>
+    <input id="name" type="text">
+    
+    <main id="main">
+    
+    </main>
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #1b1b1b; 
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+}
+
+#heading {
+  font-size: 2.5em;
+  color: #ffdd57;
+  text-shadow: 2px 2px 0px #ff4500;
+}
+
+header nav ul {
+  list-style: none;
+  background-color: #2b2b2b; 
+  padding: 1rem;
+  margin: 0;
+  border-bottom: 4px solid #ff4500; 
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffdd57; 
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: 2px solid #ffdd57; 
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+header nav ul li a:hover {
+  background-color: #ff4500; 
+  color: #121212;
+  transform: scale(1.1);
+}
+
+header nav ul li a.active {
+  background-color: #ff4500;
+  color: #1b1b1b;
+}
+
+main {
+  padding: 2rem;
+  text-align: center;
+  flex:1;
+}
+
+h1 {
+  color: #ffdd57;
+  text-shadow: 2px 2px 0px #ff4500, 4px 4px 0px #000000; 
+  font-size: 2.5rem;
+}
+
+/* Game Grid */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-items: center;
+}
+
+/* Game Card */
+.game-card {
+  border: 2px solid #ff4500; 
+  border-radius: 8px;
+  background-color: #222; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center; 
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Afbeelding in het midden gecentreerd */
+.game-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+/* Titel en tekst */
+.game-card h2 {
+  font-size: 1.4rem;
+  color: #ffdd57; 
+  margin: 0.5rem;
+}
+
+.game-card p {
+  font-size: 1rem;
+  margin: 0.5rem;
+  color: #e0e0e0; 
+}
+
+/* Knoppen */
+.game-card button {
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.game-card button:hover {
+  background-color: #ffdd57;
+  color: #1b1b1b;
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #2b2b2b;
+  color: #ffdd57;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 4px solid #ff4500;
+}

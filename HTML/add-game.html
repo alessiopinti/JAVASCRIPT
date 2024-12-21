@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="/js/dom.js" defer></script>
+    <script src="/js/add-games.js" defer></script>
+</head>
+
+<header>
+    <nav>
+      <ul>
+        <li class="links">
+          <a href="index.html">Home</a>
+          <a href="statistics.html">Statistics</a>
+          <a href="table-overview.html">Table Overview</a>
+          <a href="add-game.html">Add game</a>
+          <a href="free-to-play.html">Free-To-Play Database</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+<body>
+    <h2>Add a Game</h2>
+    <form id="add-game-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+      
+        <label for="type">Type:</label>
+        <input type="text" id="type" />
+      
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" />
+      
+        <button type="submit" id="add-game-button">Add Game</button>
+      </form>
+      <div id="status"></div>
+      
+    
+</body>
+<footer>Alessio Pinti - Front End</footer>
+</html>
